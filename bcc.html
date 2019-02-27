@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bcc</title>
+</head>
+<body>
+<script>
+    let p, x, y;
+    p = "<table border='1' height='500' width='500'>";
+    x = 2;
+    y = 1;
+    while (y <= 10) {
+        p += "<tr>";
+        while (x <= 10) {
+            p += "<td>" + y + "×" + x + "=" + (x * y);
+            x++;
+        }
+        x = 2;
+        y++;
+    }
+    document.write(p);
+</script>
+</body>
+</html>
